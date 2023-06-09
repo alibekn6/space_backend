@@ -1,0 +1,130 @@
+.home {
+  background: url(../images/homeheader.png) no-repeat center center/cover;
+  nav {
+    background: $brand-50;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+        margin: 0 1rem;
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+    padding: 5rem;
+    img {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.who-we-are {
+  &-content {
+    &-left {
+      padding: 2rem;
+      h1 {
+        color: #003087;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 1.8rem;
+      }
+    }
+    &-right {
+      background: linear-gradient(
+        164deg,
+        rgba(61, 68, 91, 1) 0%,
+        rgba(77, 105, 187, 1) 100%
+      );
+      padding: 3rem 2rem;
+      color: #fff;
+
+      font-weight: 800;
+      display: grid;
+      place-items: center;
+      height: 100%;
+    }
+  }
+}
+
+.our-achievements {
+  h1 {
+    font-weight: 800;
+    color: $brand-color2;
+    text-align: center;
+  }
+  &-content {
+    &-single {
+      padding: 2rem;
+      h1 {
+        font-weight: 800;
+        color: $brand-color2;
+      }
+      &-footer {
+        position: relative;
+        background: rgba(0, 48, 135, 0.7);
+        padding: 1rem;
+        text-align: center;
+        margin-top: -50px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border-radius: 15px;
+        h4 {
+          font-weight: 800;
+          color: white;
+          margin-bottom: 2rem;
+        }
+        p {
+          font-weight: 600;
+          color: white;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}
+footer {
+  background: $brand-color;
+  color: white;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .footer_area {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

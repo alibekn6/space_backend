@@ -1,0 +1,79 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    {% for who in whoarewe %}
+    <section class="who-we-are mb-5">
+        <div class="container">
+            <div class="who-we-are-content row">
+                <div class="col-md-6">
+                    <div class="who-we-are-content-left my-5">
+                        <h1>WHO ARE WE?</h1>
+                        <img src="{{ who.image.url }}" alt="">
+                        <!-- <img src="{% static 'assets/images/homewhoweare.png' %}" alt=""> -->
+                        <!-- ./assets/images/homewhoweare.png -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="who-we-are-content-right">
+                        {{ who.text }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+    <!-- OUR ACHIEVEMENTS -->
+    <section class="our-achievements mt-5">
+        <div class="container">
+            <h1>OUR ACHIEVEMENTS</h1>
+            <div class="our-achievements-content row">
+
+                <div class="col-md-4">
+                    <div class="our-achievements-content-single">
+                        <img src="{% static 'assets/images/achivment1.png' %}" alt="">
+                        <div class="our-achievements-content-single-footer">
+                            <h4>World Robotics Ol</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae commodi distinctio
+                                velit?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="our-achievements-content-single">
+                        <img src="{% static 'assets/images/avimetn2.png' %}" alt="">
+                        <div class="our-achievements-content-single-footer">
+                            <h4>FTC 2023</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae commodi distinctio
+                                velit?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="our-achievements-content-single">
+                        <img src="{% static 'assets/images/achiment3.png' %}" alt="">
+                        <div class="our-achievements-content-single-footer">
+                            <h4>FTC 2023</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae commodi distinctio
+                                velit?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

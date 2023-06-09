@@ -1,0 +1,81 @@
+.ourteams {
+  background: url(../images/ourteambg.png) no-repeat center center/cover;
+  background-size: cover;
+  padding: 5rem 0;
+  h1 {
+    text-align: center;
+    color: $brand-color;
+    font-weight: 800;
+    margin-bottom: 4rem;
+  }
+  .our_teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    text-align: center;
+    &_single {
+      &_footer {
+        background-color: $brand-color;
+        color: white;
+        border-radius: 10px;
+        margin-top: 10px;
+        padding: 1rem;
+      }
+    }
+    .btn_position {
+      background-color: #cd0036;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      max-width: fit-content;
+      margin: 0 auto;
+      margin-top: -10px;
+      position: relative;
+    }
+  }
+}
+
+.teamspage {
+  nav {
+    background: $brand-color;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+        margin: 0 1rem;
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+}

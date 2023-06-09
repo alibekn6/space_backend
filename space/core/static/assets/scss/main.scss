@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+$brand-color: #003087;
+$brand-50: #002f877a;
+$brand-color2: #cd0036;
+
+img {
+  width: 100%;
+}
+
+.btn-brand {
+  background-color: $brand-color;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 800;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $brand-50;
+  }
+}
+a.nav-link {
+  color: white !important;
+}
+@import "home";
+@import "team";
+@import "tutorials";
+@import "outreach";

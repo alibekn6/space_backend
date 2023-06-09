@@ -1,0 +1,63 @@
+.outreach {
+  background: url(../images/outrach.png) no-repeat center center/cover;
+  nav {
+    background: $brand-50;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      h2 {
+        color: white;
+      }
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+        margin: 0 1rem;
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+    padding: 5rem 0;
+
+    h1 {
+      font-weight: 800;
+
+      color: #cd0036;
+
+      text-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .bg-50 {
+      color: white;
+      background: $brand-50;
+      width: 100%;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
+    }
+  }
+}
