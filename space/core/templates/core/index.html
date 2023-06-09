@@ -9,7 +9,7 @@
 
 {% block content %}
     {% for who in whoarewe %}
-    <section class="who-we-are mb-5">
+    <section class="who-we-are mb-5 flex">
         <div class="container">
             <div class="who-we-are-content row">
                 <div class="col-md-6">
@@ -30,50 +30,30 @@
     </section>
     {% endfor %}
     <!-- OUR ACHIEVEMENTS -->
+
+
     <section class="our-achievements mt-5">
         <div class="container">
             <h1>OUR ACHIEVEMENTS</h1>
             <div class="our-achievements-content row">
+                {% for ach in achive %}
+                <div class="col-md-4">
+                    <div class="our-achievements-content-single">
+                        <img src="{{ ach.image.url }}" alt="">
+                        <div class="our-achievements-content-single-footer">
+                            <h4>{{ ach.title }}</h4>
+                            <p>
+                                {{ ach.text }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
 
-                <div class="col-md-4">
-                    <div class="our-achievements-content-single">
-                        <img src="{% static 'assets/images/achivment1.png' %}" alt="">
-                        <div class="our-achievements-content-single-footer">
-                            <h4>World Robotics Ol</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae commodi distinctio
-                                velit?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="our-achievements-content-single">
-                        <img src="{% static 'assets/images/avimetn2.png' %}" alt="">
-                        <div class="our-achievements-content-single-footer">
-                            <h4>FTC 2023</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae commodi distinctio
-                                velit?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="our-achievements-content-single">
-                        <img src="{% static 'assets/images/achiment3.png' %}" alt="">
-                        <div class="our-achievements-content-single-footer">
-                            <h4>FTC 2023</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae commodi distinctio
-                                velit?
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
     </section>
+
+    
 {% endblock %}

@@ -9,6 +9,8 @@ class WhoAreWe(models.Model):
 
 
 class Achivements(models.Model):
-    title = models.CharField(max_length=20)
+    title = models.CharField(max_length=50)
     text = models.CharField(max_length=255)
     image = models.ImageField(upload_to='achivements')
+
+
